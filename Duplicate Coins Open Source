@@ -1,0 +1,22 @@
+enabled = true
+
+while true do
+    if enabled then
+        local args = {
+            {
+                ["PassengerValues"] = workspace:WaitForChild("Jeepnies", 9e9)
+                    :WaitForChild(game.Players.LocalPlayer.Name, 9e9)
+                    :WaitForChild("PassengerValues", 9e9),
+
+                ["Password"] = 460134784,
+                ["Value"] = 300
+            }
+        }
+
+        game:GetService("ReplicatedStorage")
+            :WaitForChild("Remotes", 9e9)
+            :WaitForChild("RecieveCoin", 9e9)
+            :FireServer(args)
+    end
+    task.wait()
+end
