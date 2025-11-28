@@ -42,7 +42,7 @@ end)
 pcall(function()
     game:GetService("StarterGui"):SetCore("SendNotification", {
         Title = "Nexora On Top",
-        Text = "Your username had been Hidden Protected by QFlowX",
+        Text = "Your username had been Hidden Protected by Nexora",
         Duration = 5
     })
 end)
